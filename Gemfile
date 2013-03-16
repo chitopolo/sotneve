@@ -38,3 +38,7 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 gem 'omniauth-facebook'
+
+
+
+gem 'rvm-capistrano'
