@@ -1,0 +1,68 @@
+<%= form_for @register, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label "Nombre", :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :first, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label "Apellidos", :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :last, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label "Ciudad", :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :city, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label "telefono", :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :phone, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label "Celular", :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :cellphone, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label "Email", :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :email, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label "Empresa", :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :company, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label "Tipo de Pago:", :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :paymentmethod, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label "NIT a nombre de", :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :nitname, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label "Numero de NIT", :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :nitnumber, :class => 'text_field' %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                registers_path, :class => 'btn' %>
+  </div>
+<% end %>

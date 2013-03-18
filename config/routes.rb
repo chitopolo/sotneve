@@ -1,6 +1,12 @@
 Eventos::Application.routes.draw do
 
 
+  resources :schedules
+
+
+  resources :registers
+
+
 match 'auth/facebook/callback', to: 'sessions#create'
 match 'auth/failure', to: redirect('/')
 match 'signout', to: 'sessions#destroy', as: 'signout'

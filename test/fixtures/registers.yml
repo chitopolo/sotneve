@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  first: MyString
+  last: MyString
+  city: MyString
+  phone: 1
+  cellphone: 1
+  email: MyString
+  company: MyString
+  paymentmethod: MyString
+  nitname: MyString
+  nitnumber: MyString
+
+two:
+  first: MyString
+  last: MyString
+  city: MyString
+  phone: 1
+  cellphone: 1
+  email: MyString
+  company: MyString
+  paymentmethod: MyString
+  nitname: MyString
+  nitnumber: MyString

@@ -1,1 +1,52 @@
-<h1>Eventos Bienvenido!!!! </h1>
+<div id="myCarousel" class="carousel">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+    <div class="active item"><img src="<%= asset_path( 'bannersecres3.jpg') %>" alt="" /></div>
+    <div class="item"><img src="<%= asset_path( 'banner2.jpg') %>" alt="" /></div>
+    <div class="item"><img src="<%= asset_path( 'banner1.jpg') %>" alt="" /></div>
+    
+  </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+</div>
+
+
+<div class = "hero-unit">
+
+<h1>Falta muy poco</h1>
+ <p> Te esperamos en Cochabamba, el 9 y 10 Abril de 2013, el evento estara INCREIBLE!</p>
+ <div class ="btn btn-primary"><%= link_to "Registrarme", :controller => 'registers', :action => 'new' %></div>
+
+</div>
+
+
+
+<div class = "row">
+  <div class = "span3"> 
+    <h2>Excelentes expositores</h2>
+    <p>Te traemos los mejores expositores para que tu experiencia sea...</p>
+  </div>
+  <div class = "span3">
+  <h2>Excelentes conferencias</h2>
+    <p>Te traemos los mejores expositores para que tu experiencia sea...</p>
+    </div>
+  <div class = "span3">
+    <h2>Temas de actualidad</h2>
+    <p>Te traemos los mejores expositores para que tu experiencia sea...</p>
+  </div>
+ <div = "span3">  
+
+        <% if current_user %>
+        Hola <strong><%= current_user.name %></strong>!
+        <img src="<%= current_user.image %>" alt="" />
+        <%= link_to "Cerrar sesion", signout_path, id: "sign_out" %>
+
+       <% else %>
+        <%= link_to "Registrate con facebook", "/auth/facebook", id: "sign_in" %>
+        <% end %>
+
+        <!-- <div class="fb-comments" data-href="http://secretariaejecutiva.com" data-width="300" data-num-posts="2"></div>  -->
+
+      </div>
+</div>
